@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" prefHeight="440.0" prefWidth="453.0" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <columnConstraints>
+        <ColumnConstraints />
+        <ColumnConstraints />
+        <ColumnConstraints />
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <Pane prefHeight="350.0" prefWidth="393.0" GridPane.columnIndex="1">
+            <children>
+                <Button layoutX="98.0" layoutY="89.0" mnemonicParsing="false" onAction="#AccountAdd" prefHeight="25.0" prefWidth="198.0" text="Create new Account ">
+                    <contextMenu>
+                        <ContextMenu>
+                            <items>
+                                <MenuItem mnemonicParsing="false" text="Unspecified Action" />
+                            </items>
+                        </ContextMenu>
+                    </contextMenu>
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Button>
+                <Button layoutX="98.0" layoutY="132.0" mnemonicParsing="false" onAction="#deposit" prefHeight="25.0" prefWidth="198.0" text="Deposit Money ">
+                    <font>
+                        <Font size="14.0" />
+                    </font></Button>
+                <Button layoutX="98.0" layoutY="175.0" mnemonicParsing="false" onAction="#withdraw" prefHeight="25.0" prefWidth="198.0" text="Withdraw Money">
+                    <font>
+                        <Font size="14.0" />
+                    </font></Button>
+                <Button layoutX="98.0" layoutY="216.0" mnemonicParsing="false" onAction="#display" prefHeight="25.0" prefWidth="198.0" text="Display Account info">
+                    <font>
+                        <Font size="14.0" />
+                    </font></Button>
+                <Button layoutX="98.0" layoutY="257.0" mnemonicParsing="false" onAction="#list" prefHeight="25.0" prefWidth="198.0" text="Account List">
+                    <font>
+                        <Font size="14.0" />
+                    </font></Button>
+                <Label layoutX="100.0" layoutY="31.0" text="Welcome to the Bank 'X'">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+            </children>
+        </Pane>
+    </children>
+</GridPane>
